@@ -1,11 +1,18 @@
+// Componente tipo TextInput
+
 import React from 'react';
 import { StyleSheet, View, TextInput,Dimensions} from 'react-native';
 
-export default  ({placeholder}) =>{
+export default  ({placeholder, onChangeText, autoCapitalize, secureTextEntry,value}) =>{
     return(
         <View>
-        <TextInput style={styles.input}
-        placeholder={placeholder}/>
+          <TextInput style={styles.input}
+          placeholder={placeholder}
+          onChangeText={onChangeText}
+          autoCapitalize={autoCapitalize}
+          secureTextEntry={secureTextEntry}
+          value={value}
+          />
         </View>
         )
 }

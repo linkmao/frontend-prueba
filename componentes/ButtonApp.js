@@ -1,3 +1,5 @@
+// Componente tipo TouchableOpacity 
+
 import React from 'react';
 import { StyleSheet, View, TouchableOpacity,Dimensions, Text} from 'react-native';
 
